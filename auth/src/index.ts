@@ -4,10 +4,9 @@ import { json } from "body-parser";
 const app = express();
 app.use(json());
 
-app.get('/api/users/currentuser' , (req, res)=>{
-  res.send("Congratulation you have done this..!!")
-
-})
+app.get("/api/users/currentuser", (req, res) => {
+  res.send("Congratulation you have done this..!!");
+});
 
 app.listen(3000, () => {
   console.log("Listening on port 3000 !!!!!!");
