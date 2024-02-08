@@ -21,7 +21,7 @@ kind : Service
 metadata:
   name: auth-srv
 spec:
-  selector:
+  selector:    #serviceType - clusterIp by Default
     app: auth
   ports:
     - name: auth
